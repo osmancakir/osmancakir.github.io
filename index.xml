@@ -6,10 +6,22 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Dec 2018 11:53:49 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CNNs - The VGG16 Model with Keras Simple Prediction</title>
+      <link>https://osmancakir.io/deep_learning/cnns_vgg16_keras_simplest/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/deep_learning/cnns_vgg16_keras_simplest/</guid>
+      <description>In this notebook we are just going to look at the VGG16 model and try a simple prediction with a now unfortunately extinct Kauai &amp;lsquo;O&amp;rsquo;o bird&amp;rsquo;s photo.
+The sweet, bell-like tones of the Kauai O&amp;rsquo;o were heard for the last time nearly 20 years ago. Below through the link you can listen to its sad song.
+
+Let&amp;rsquo;s also look at the photo I am going to use for this example.</description>
+    </item>
     
     <item>
       <title>A Personal Historical Revision</title>
