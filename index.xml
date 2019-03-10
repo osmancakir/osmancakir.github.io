@@ -6,10 +6,30 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating Choropleth Maps With Python</title>
+      <link>https://osmancakir.io/data_visualization/data_visualization_choropleth_maps/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/data_visualization/data_visualization_choropleth_maps/</guid>
+      <description>Choropleth Maps Here we are going to create a US map with agricultural production data on it. This little project was from my master&amp;rsquo;s degree in economics but I am excited to create a map with art history too. If you have any idea and (data) just reach me up and we can make it!.
+This code below creates an interactive map plot with plotly. Unfortunately you will be able to see the maps if you run and try the code yourself due to plotly being javascript based.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Basics with Art</title>
+      <link>https://osmancakir.io/postgresql/postgresql_basics_with_art/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/postgresql/postgresql_basics_with_art/</guid>
+      <description>Create Table Let&amp;rsquo;s create a table called painters and save the data about the most expensive paintings in the world.
+-- Create table called painters CREATE TABLE painters ( -- string variable  painter varchar(255), -- string variable  painting varchar(255), -- integer variable  sold (million Euros) int ) Insert Rows -- Insert into the table painters INSERT INTO adventurers (painter, painting, sold (million Euros)) VALUES (&amp;#39;Leonardo da Vinci&amp;#39;, &amp;#39;Salvator Mundi&amp;#39;, 382), (&amp;#39;Willem de Kooning&amp;#39;, &amp;#39;Interchange&amp;#39;, 254), (&amp;#39;Paul Cézanne&amp;#39;, &amp;#39;The Card Players&amp;#39;, 212 ), (&amp;#39;Paul Gauguin&amp;#39;, &amp;#39;Nafea Faa Ipoipo&amp;#39;, 172), (&amp;#39;Jackson Pollock&amp;#39;, &amp;#39;Number 7A&amp;#39;, 169.</description>
+    </item>
     
     <item>
       <title>CNNs - The VGG16 Model with Keras Simple Prediction</title>

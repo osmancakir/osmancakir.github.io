@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://osmancakir.io/data_visualization/data_visualization_choropleth_maps/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://osmancakir.io/postgresql/postgresql_basics_with_art/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://osmancakir.io/deep_learning/cnns_vgg16_keras_simplest/</loc>
     <lastmod>2018-12-03T00:00:00+00:00</lastmod>
   </url>
@@ -89,7 +99,7 @@
   
   <url>
     <loc>https://osmancakir.io/</loc>
-    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
