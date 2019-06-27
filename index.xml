@@ -17,12 +17,11 @@
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://osmancakir.io/notebooks/postgresql_basics_with_art/</guid>
-      <description>Create Table Let&amp;rsquo;s create a table called painters and save the data about the most expensive paintings in the world.
--- Create table called painters CREATE TABLE painters ( -- string variable  painter varchar(255), -- string variable  painting varchar(255), -- integer variable  sold (million Euros) int ) Insert Rows -- Insert into the table painters INSERT INTO adventurers (painter, painting, sold (million Euros)) VALUES (&amp;#39;Leonardo da Vinci&amp;#39;, &amp;#39;Salvator Mundi&amp;#39;, 382), (&amp;#39;Willem de Kooning&amp;#39;, &amp;#39;Interchange&amp;#39;, 254), (&amp;#39;Paul Cézanne&amp;#39;, &amp;#39;The Card Players&amp;#39;, 212 ), (&amp;#39;Paul Gauguin&amp;#39;, &amp;#39;Nafea Faa Ipoipo&amp;#39;, 172), (&amp;#39;Jackson Pollock&amp;#39;, &amp;#39;Number 7A&amp;#39;, 169.</description>
+      <description>Create Table Let&amp;rsquo;s create a table called painters and save the data about the most expensive paintings in the world. Money value of an art piece is probably the most unreasonable one yet it is one of the first analysis that is demanded when a quantitative analysis on art is the aim. Money is cheap when compared to the true value of an Art. Only quality as Robert M. Pirsig defined could be the trade value for art.</description>
     </item>
     
     <item>
-      <title>CNNs - The VGG16 Model with Keras Simple Prediction</title>
+      <title>Remembering Kauai &#39;O&#39;o with Deep Learning</title>
       <link>https://osmancakir.io/notebooks/cnns_vgg16_keras_simplest/</link>
       <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -87,14 +86,12 @@ Since I do not want to divide the topic into more sub topics any more, this note
     </item>
     
     <item>
-      <title>Recommender Systems Basics Recommending Films</title>
+      <title>Recommending Films with Recommender Systems</title>
       <link>https://osmancakir.io/notebooks/recommender_systems_basics_recommending_films/</link>
       <pubDate>Sun, 02 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://osmancakir.io/notebooks/recommender_systems_basics_recommending_films/</guid>
-      <description>In this basic project, we will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item, in this case, films. Keep in mind, this is not a true robust recommendation system, to describe it more accurately,it just tells you what movies/items are most similar to your movie choice.
-Let&amp;rsquo;s get started!
-Import Libraries import numpy as np import pandas as pd Get the Data column_names = [&amp;#39;user_id&amp;#39;, &amp;#39;item_id&amp;#39;, &amp;#39;rating&amp;#39;, &amp;#39;timestamp&amp;#39;] df = pd.</description>
+      <description>How do you recommend someone a film? How much information an IMDB score can reveal about a films value? In this basic project, we will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item, in this case, films. Keep in mind, this is not a true robust recommendation system, to describe it more accurately,it just tells you what movies/items are most similar to your movie choice.</description>
     </item>
     
     <item>
