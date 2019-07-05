@@ -6,10 +6,50 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript ES7 Learning Notebooks - 1</title>
+      <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook1/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/javascriptes7/javascript_es7_notebook1/</guid>
+      <description>I started learned programming with Python and Jupyter Notebooks. The ease to share a notebook and watching cell by cell what the code does was key to me to demistify software development. I am now addicted to this approach.
+Currently I am working on a research data management tool which is written in pure JS and so I want to get better at JS7 functionalities. I also wanted to have a reference sheet for myself.</description>
+    </item>
+    
+    <item>
+      <title>Javascript ES7 Learning Notebooks - 2</title>
+      <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook2/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/javascriptes7/javascript_es7_notebook2/</guid>
+      <description>Let&amp;rsquo;s continue where we left off.
+Contents 8 - Arrays * Store Data in Arrays * Nested Arrays : Multidimensional Arrays * Access Data in Arrays with Indexes * Arrays are Mutable * Manipulating Arrays push() pop() shift() unshift() 9 - Functions * A Simple Function * Global Scopes and Functions * Local Scopes and Functions * Understanding Undefined Value Returned From A Function * Assignment with A Returned Value * Stand in Line.</description>
+    </item>
+    
+    <item>
+      <title>Javascript ES7 Learning Notebooks - 3</title>
+      <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook3/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/javascriptes7/javascript_es7_notebook3/</guid>
+      <description>The first 2 notebooks were actually the basics of javascript. The 3rd and 4th notebooks are more focused on new functionalities of ES7 and some advanced programming in JS.
+Contents  11 - Build Javascript Objects [3rd Notebook] * Manipulate Complex Objects in JS 12 - Loops * while Loop * for Loop * Nested for Loop * Do While Loops 13 - Generate Random Numbers * parseInt() 14 - The Conditional (Ternary) Operator 15 - Let and Const Variable Declaration in Detail 16 - Specify a Default Value For a Function 17 - Rest Operator 18 - Spread Operator  #!</description>
+    </item>
+    
+    <item>
+      <title>Javascript ES7 Learning Notebooks - 4</title>
+      <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook4/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://osmancakir.io/javascriptes7/javascript_es7_notebook4/</guid>
+      <description>This is going to be the last notebook for our small project about learning JS and ES7 functionalities. Hope you enjoyed learning it.
+#!pip install pixiedust #!pip install pixiedust_nodeimport pixiedust import pixiedust_node Pixiedust database opened successfully &amp;lt;div style=&amp;quot;margin:10px&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/ibm-watson-data-lab/pixiedust&amp;quot; target=&amp;quot;_new&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://github.com/ibm-watson-data-lab/pixiedust/raw/master/docs/_static/pd_icon32.png&amp;quot; style=&amp;quot;float:left;margin-right:10px&amp;quot;/&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Pixiedust version 1.1.17&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;margin:10px&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/ibm-cds-labs/pixiedust_node&amp;quot; target=&amp;quot;_new&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://github.com/ibm-cds-labs/pixiedust_node/raw/master/docs/_images/pdn_icon32.png&amp;quot; style=&amp;quot;float:left;margin-right:10px&amp;quot;/&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Pixiedust Node.js&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; pixiedust_node 0.2.5 started. Cells starting &#39;%%node&#39; may contain Node.</description>
+    </item>
     
     <item>
       <title>PostgreSQL Basics with Art</title>
