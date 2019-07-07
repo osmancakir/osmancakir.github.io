@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Javascript ES7 Learning Notebooks - 1</title>
+      <title>Javascript ES7 1 : Introduction</title>
       <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook1/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,7 @@ Currently I am working on a research data management tool which is written in pu
     </item>
     
     <item>
-      <title>Javascript ES7 Learning Notebooks - 2</title>
+      <title>Javascript ES7 2 : Arrays, Functions and Logic</title>
       <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook2/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -32,7 +32,7 @@ Contents 8 - Arrays * Store Data in Arrays * Nested Arrays : Multidimensional Ar
     </item>
     
     <item>
-      <title>Javascript ES7 Learning Notebooks - 3</title>
+      <title>Javascript ES7 3 : Objects, Loops, Advanced Operators</title>
       <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook3/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -42,13 +42,13 @@ Contents  11 - Build Javascript Objects [3rd Notebook] * Manipulate Complex Obje
     </item>
     
     <item>
-      <title>Javascript ES7 Learning Notebooks - 4</title>
+      <title>Javascript ES7 4 : Destructuring and Constructor Functions</title>
       <link>https://osmancakir.io/javascriptes7/javascript_es7_notebook4/</link>
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://osmancakir.io/javascriptes7/javascript_es7_notebook4/</guid>
       <description>This is going to be the last notebook for our small project about learning JS and ES7 functionalities. Hope you enjoyed learning it.
-#!pip install pixiedust #!pip install pixiedust_nodeimport pixiedust import pixiedust_node Pixiedust database opened successfully &amp;lt;div style=&amp;quot;margin:10px&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/ibm-watson-data-lab/pixiedust&amp;quot; target=&amp;quot;_new&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://github.com/ibm-watson-data-lab/pixiedust/raw/master/docs/_static/pd_icon32.png&amp;quot; style=&amp;quot;float:left;margin-right:10px&amp;quot;/&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Pixiedust version 1.1.17&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;margin:10px&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://github.com/ibm-cds-labs/pixiedust_node&amp;quot; target=&amp;quot;_new&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://github.com/ibm-cds-labs/pixiedust_node/raw/master/docs/_images/pdn_icon32.png&amp;quot; style=&amp;quot;float:left;margin-right:10px&amp;quot;/&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Pixiedust Node.js&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; pixiedust_node 0.2.5 started. Cells starting &#39;%%node&#39; may contain Node.</description>
+#!pip install pixiedust #!pip install pixiedust_nodeimport pixiedust import pixiedust_node Pixiedust database opened successfully pixiedust_node 0.2.5 started. Cells starting &#39;%%node&#39; may contain Node.js code.  Contents  19 - Destructuring Assignment to Assign Variables from Objects * Change the order of elements in arrays with destructuring * Another use of Destructuring * Destructuring Assignment to Pass an Object as a Function&#39;s Parameters 20 - Create Literals Using Template Literals 21 - Write Concise Object Literal Declerations Using Simple Fields 22 - Write Concise Declarative Functions 23 - Using class Syntax to Define a Constructor Function 24 - Use getters and setters to Control Access to an Object 25 - Import and Export vs Require  19 - Destructuring Assignment to Assign Variables from Objects %%node var voxel = {x:3.</description>
     </item>
     
     <item>
