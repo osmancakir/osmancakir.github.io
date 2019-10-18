@@ -1,1 +1,0 @@
-# osmancakir.github.io
