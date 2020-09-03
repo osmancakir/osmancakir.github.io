@@ -6,19 +6,46 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Dec 2019 11:53:49 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 11:53:49 -0700</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Personal Video</title>
+      <title>Javascript Syntax</title>
+      <link>https://osmancakir.io/javascriptnotes/javascriptsyntax/</link>
+      <pubDate>Thu, 03 Sep 2020 11:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/javascriptnotes/javascriptsyntax/</guid>
+      <description>to be continued.</description>
+    </item>
+    
+    <item>
+      <title>React to this</title>
+      <link>https://osmancakir.io/reactnotes/firstreactnote/</link>
+      <pubDate>Thu, 03 Sep 2020 11:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/reactnotes/firstreactnote/</guid>
+      <description>to be continued.</description>
+    </item>
+    
+    <item>
+      <title>Türkce Yazmak Istiyorum</title>
       <link>https://osmancakir.io/articles/historical_revision/</link>
-      <pubDate>Sun, 08 Dec 2019 11:53:49 -0700</pubDate>
+      <pubDate>Thu, 03 Sep 2020 11:53:49 -0700</pubDate>
       
       <guid>https://osmancakir.io/articles/historical_revision/</guid>
-      <description>I will upload a short video about who I am and What am I doing.
-&amp;mdash;Stay Tuned&amp;mdash;</description>
+      <description>Türkce de yazmak istedigime karar verdim. Ama türkce klavyem yok. Affola almanca klavye ile anca bu kadar olacak. Bu yazi da yakin zamanda kendine bir konu edinir.
+&amp;mdash;devami gelecek&amp;mdash;</description>
+    </item>
+    
+    <item>
+      <title>What is Digital Humanities?</title>
+      <link>https://osmancakir.io/digitalhumanities/whatisdh/</link>
+      <pubDate>Thu, 03 Sep 2020 11:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/digitalhumanities/whatisdh/</guid>
+      <description>What is Digital Humanities?</description>
     </item>
     
     <item>
@@ -151,7 +178,9 @@ Since I do not want to divide the topic into more sub topics any more, this note
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://osmancakir.io/about/osman_cakir/</guid>
-      <description>I try to get (and give) as much as love, laughter and also an understanding how things work and evolve. I help organizing a Turkish film festival in Munich. I like djing old vinlys from different cultures&amp;rsquo; music. My favourite activity is sitting on a bench somewhere in the city listening to the wave of thoughts in my mind quietly while enjoying my coffee. These moments then become what I write about.</description>
+      <description>My favourite activity is sitting on a bench somewhere in the city listening to the wave of thoughts in my mind quietly while enjoying my coffee. These moments then become what I write about.
+
+- Email: osmancakir11@gmail.com; - Twitter: @osmancakirio</description>
     </item>
     
   </channel>
