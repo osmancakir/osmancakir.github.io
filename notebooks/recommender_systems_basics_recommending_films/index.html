@@ -38,10 +38,9 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Recommending Films with Recommender Systems"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Recommending Films with Recommender Systems"/>
 <meta name="twitter:description" content="Simple notebook to understand recommender systems"/>
-<meta name="generator" content="Hugo 0.40.1" /> 
+<meta name="generator" content="Hugo 0.30" /> 
     
     
 <script type="application/ld+json">
@@ -172,8 +171,8 @@ MathJax.Hub.Config({
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></code></pre></div>
 <h2 id="get-the-data">Get the Data</h2>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;item_id&#39;</span><span class="p">,</span> <span class="s1">&#39;rating&#39;</span><span class="p">,</span> <span class="s1">&#39;timestamp&#39;</span><span class="p">]</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;u.data&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">column_names</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="sa"></span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;item_id&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;u.data&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">column_names</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -226,7 +225,7 @@ MathJax.Hub.Config({
 </div>
 
 <p>Now let&rsquo;s get the movie titles:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">movie_titles</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;Movie_Id_Titles&#34;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">movie_titles</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;Movie_Id_Titles&#34;</span><span class="p">)</span>
 <span class="n">movie_titles</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
@@ -268,7 +267,7 @@ MathJax.Hub.Config({
 </div>
 
 <p>We can merge them together:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">movie_titles</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;item_id&#39;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">movie_titles</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;item_id&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
@@ -334,10 +333,10 @@ MathJax.Hub.Config({
 <h2 id="visualization-imports">Visualization Imports</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span></code></pre></div>
 <p>Let&rsquo;s create a ratings dataframe with average rating and number of ratings:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <pre><code>title
 Marlene Dietrich: Shadow and Light (1996)     5.0
 Prefontaine (1997)                            5.0
@@ -346,7 +345,7 @@ Star Kid (1997)                               5.0
 Someone Else's America (1995)                 5.0
 Name: rating, dtype: float64
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <pre><code>title
 Star Wars (1977)             584
 Contact (1997)               509
@@ -355,7 +354,7 @@ Return of the Jedi (1983)    507
 Liar Liar (1997)             485
 Name: rating, dtype: int64
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ratings</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ratings</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 <span class="n">ratings</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
@@ -395,7 +394,7 @@ Name: rating, dtype: int64
 </div>
 
 <p>Now set the number of ratings column:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ratings</span><span class="p">[</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ratings</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;title&#39;</span><span class="p">)[</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="n">ratings</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
@@ -443,18 +442,18 @@ Name: rating, dtype: int64
 
 <p>Now a few histograms:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-<span class="n">ratings</span><span class="p">[</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span></code></pre></div>
+<span class="n">ratings</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span></code></pre></div>
 <pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1258f8780&gt;
 </code></pre>
 
 <p><img src="recommender_systems_basics_recommending_films_19_1.png" alt="png" /></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-<span class="n">ratings</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span></code></pre></div>
+<span class="n">ratings</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span></code></pre></div>
 <pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x125d12908&gt;
 </code></pre>
 
 <p><img src="recommender_systems_basics_recommending_films_20_1.png" alt="png" /></p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;rating&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">ratings</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">ratings</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span></code></pre></div>
 <pre><code>&lt;seaborn.axisgrid.JointGrid at 0x126005320&gt;
 </code></pre>
 
@@ -465,7 +464,7 @@ Name: rating, dtype: int64
 <h2 id="recommending-similar-movies">Recommending Similar Movies</h2>
 
 <p>Now let&rsquo;s create a matrix that has the user ids on one access and the movie title on another axis. Each cell will then consist of the rating the user gave to that movie. Note there will be a lot of NaN values, because most people have not seen most of the movies.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">moviemat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;rating&#39;</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">moviemat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;title&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;rating&#39;</span><span class="p">)</span>
 <span class="n">moviemat</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
@@ -646,7 +645,7 @@ Name: rating, dtype: int64
 </div>
 
 <p>Most rated movie:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ratings</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">ratings</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -763,8 +762,8 @@ Name: rating, dtype: int64
 </div>
 
 <p>Now let&rsquo;s grab the user ratings for those two movies:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">starwars_user_ratings</span> <span class="o">=</span> <span class="n">moviemat</span><span class="p">[</span><span class="s1">&#39;Star Wars (1977)&#39;</span><span class="p">]</span>
-<span class="n">liarliar_user_ratings</span> <span class="o">=</span> <span class="n">moviemat</span><span class="p">[</span><span class="s1">&#39;Liar Liar (1997)&#39;</span><span class="p">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">starwars_user_ratings</span> <span class="o">=</span> <span class="n">moviemat</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;Star Wars (1977)&#39;</span><span class="p">]</span>
+<span class="n">liarliar_user_ratings</span> <span class="o">=</span> <span class="n">moviemat</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;Liar Liar (1997)&#39;</span><span class="p">]</span>
 <span class="n">starwars_user_ratings</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <pre><code>user_id
 0    5.0
@@ -783,7 +782,7 @@ Name: Star Wars (1977), dtype: float64
 </code></pre>
 
 <p>Let&rsquo;s clean this by removing NaN values and using a DataFrame instead of a series:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similar_to_starwars</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Correlation&#39;</span><span class="p">])</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similar_to_starwars</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;Correlation&#39;</span><span class="p">])</span>
 <span class="n">corr_starwars</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">corr_starwars</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
@@ -824,7 +823,7 @@ Name: Star Wars (1977), dtype: float64
 </div>
 
 <p>Now if we sort the dataframe by correlation, we should get the most similar movies, however note that we get some results that don&rsquo;t really make sense. This is because there are a lot of movies only watched once by users who also watched star wars (it was the most popular movie).</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -883,7 +882,7 @@ Name: Star Wars (1977), dtype: float64
 </div>
 
 <p>Let&rsquo;s fix this by filtering out movies that have less than 100 reviews (this value was chosen based off the histogram from earlier).</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span> <span class="o">=</span> <span class="n">corr_starwars</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">])</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span> <span class="o">=</span> <span class="n">corr_starwars</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">])</span>
 <span class="n">corr_starwars</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
@@ -930,7 +929,7 @@ Name: Star Wars (1977), dtype: float64
 </div>
 
 <p>Now sort the values and notice how the titles make a lot more sense:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span><span class="p">[</span><span class="n">corr_starwars</span><span class="p">[</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_starwars</span><span class="p">[</span><span class="n">corr_starwars</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -976,10 +975,10 @@ Name: Star Wars (1977), dtype: float64
 </div>
 
 <p>Now the same for the comedy Liar Liar:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_liarliar</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similar_to_liarliar</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Correlation&#39;</span><span class="p">])</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">corr_liarliar</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similar_to_liarliar</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;Correlation&#39;</span><span class="p">])</span>
 <span class="n">corr_liarliar</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">corr_liarliar</span> <span class="o">=</span> <span class="n">corr_liarliar</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">])</span>
-<span class="n">corr_liarliar</span><span class="p">[</span><span class="n">corr_liarliar</span><span class="p">[</span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
+<span class="n">corr_liarliar</span> <span class="o">=</span> <span class="n">corr_liarliar</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">])</span>
+<span class="n">corr_liarliar</span><span class="p">[</span><span class="n">corr_liarliar</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;num of ratings&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;Correlation&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -1049,7 +1048,7 @@ Name: Star Wars (1977), dtype: float64
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 17 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
+            <span class="text-muted">This project contains 16 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
         </div>
     </footer>
 

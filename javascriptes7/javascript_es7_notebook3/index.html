@@ -38,10 +38,9 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Javascript ES7 3 : Objects, Loops, Advanced Operators"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Javascript ES7 3 : Objects, Loops, Advanced Operators"/>
 <meta name="twitter:description" content="Javascript ES7 Functionalities"/>
-<meta name="generator" content="Hugo 0.40.1" /> 
+<meta name="generator" content="Hugo 0.30" /> 
     
     
 <script type="application/ld+json">
@@ -211,23 +210,23 @@ pixiedust_node 0.2.5 started. Cells starting '%%node' may contain Node.js code.
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">var</span> <span class="n">ourDog</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Leo&#34;</span><span class="p">,</span> 
-    <span class="s2">&#34;legs&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-    <span class="s2">&#34;tails&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&#34;friends&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;everything&#34;</span><span class="p">],</span>
-    <span class="s2">&#34;the drink&#34;</span><span class="p">:</span> <span class="s2">&#34;water&#34;</span><span class="p">,</span>
-    <span class="mi">12</span> <span class="p">:</span> <span class="s2">&#34;number&#34;</span>
+    <span class="sa"></span><span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;Leo&#34;</span><span class="p">,</span> 
+    <span class="sa"></span><span class="s2">&#34;legs&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="sa"></span><span class="s2">&#34;tails&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+    <span class="sa"></span><span class="s2">&#34;friends&#34;</span><span class="p">:</span> <span class="p">[</span><span class="sa"></span><span class="s2">&#34;everything&#34;</span><span class="p">],</span>
+    <span class="sa"></span><span class="s2">&#34;the drink&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;water&#34;</span><span class="p">,</span>
+    <span class="mi">12</span> <span class="p">:</span> <span class="sa"></span><span class="s2">&#34;number&#34;</span>
 <span class="p">};</span></code></pre></div>
 <pre><code>... ... ... ... ... ... ...
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">var</span> <span class="n">legs</span> <span class="o">=</span> <span class="n">ourDog</span><span class="o">.</span><span class="n">legs</span> <span class="o">//</span> <span class="n">access</span> <span class="k">with</span> <span class="n">dot</span>
-<span class="n">var</span> <span class="n">drinks</span> <span class="o">=</span> <span class="n">ourDog</span><span class="p">[</span><span class="s2">&#34;the drink&#34;</span><span class="p">];</span> <span class="o">//</span> <span class="n">access</span> <span class="k">with</span> <span class="n">brackets</span>
+<span class="n">var</span> <span class="n">drinks</span> <span class="o">=</span> <span class="n">ourDog</span><span class="p">[</span><span class="sa"></span><span class="s2">&#34;the drink&#34;</span><span class="p">];</span> <span class="o">//</span> <span class="n">access</span> <span class="k">with</span> <span class="n">brackets</span>
 <span class="n">var</span> <span class="n">playerNumber</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span> <span class="o">//</span> <span class="n">access</span> <span class="k">with</span> <span class="n">a</span> <span class="n">variable</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">one</span> <span class="n">of</span> <span class="n">the</span> <span class="n">keys</span>
 <span class="n">var</span> <span class="n">player</span> <span class="o">=</span> <span class="n">ourDog</span><span class="p">[</span><span class="n">playerNumber</span><span class="p">];</span>
-<span class="n">ourDog</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;Happy Leo&#34;</span> <span class="o">//</span> <span class="n">updating</span>
-<span class="n">ourDog</span><span class="o">.</span><span class="n">bark</span> <span class="o">=</span> <span class="s2">&#34;woof&#34;</span> <span class="o">//</span> <span class="n">adding</span>
-<span class="n">ourDog</span><span class="p">[</span><span class="s1">&#39;level&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="mi">45</span> <span class="o">//</span> <span class="n">adding</span>
+<span class="n">ourDog</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;Happy Leo&#34;</span> <span class="o">//</span> <span class="n">updating</span>
+<span class="n">ourDog</span><span class="o">.</span><span class="n">bark</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;woof&#34;</span> <span class="o">//</span> <span class="n">adding</span>
+<span class="n">ourDog</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;level&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="mi">45</span> <span class="o">//</span> <span class="n">adding</span>
 <span class="o">//</span> <span class="n">delete</span> <span class="n">ourDog</span><span class="o">.</span><span class="n">level</span><span class="p">;</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ourDog</span><span class="p">)</span></code></pre></div>
 <pre><code>{ '12': 'number',
@@ -241,15 +240,15 @@ level: 45 }
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">function</span> <span class="n">phoneticLookUp</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span><span class="n">lookup</span> <span class="n">example</span>
-    <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;&#34;</span>
     <span class="n">var</span> <span class="n">lookup</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&#34;alpha&#34;</span><span class="p">:</span> <span class="s2">&#34;adam&#34;</span><span class="p">,</span>
-        <span class="s2">&#34;bravo&#34;</span><span class="p">:</span> <span class="s2">&#34;boston&#34;</span>
+        <span class="sa"></span><span class="s2">&#34;alpha&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;adam&#34;</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;bravo&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;boston&#34;</span>
     <span class="p">}</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">val</span><span class="p">];</span>
     <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">phoneticLookUp</span><span class="p">(</span><span class="s2">&#34;alpha&#34;</span><span class="p">))</span></code></pre></div>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">phoneticLookUp</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;alpha&#34;</span><span class="p">))</span></code></pre></div>
 <pre><code>... ... ..... ..... ..... ... ... ...
 adam
 </code></pre>
@@ -259,10 +258,10 @@ adam
         <span class="k">return</span> <span class="n">ourDog</span><span class="p">[</span><span class="n">checkProp</span><span class="p">]</span>         
         <span class="p">}</span>
          <span class="k">else</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="s2">&#34;not found&#34;</span>
+            <span class="k">return</span> <span class="sa"></span><span class="s2">&#34;not found&#34;</span>
         <span class="p">}</span>
 <span class="p">}</span>
-<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">checkObj</span><span class="p">(</span><span class="s2">&#34;tails&#34;</span><span class="p">))</span></code></pre></div>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">checkObj</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;tails&#34;</span><span class="p">))</span></code></pre></div>
 <pre><code>... ..... ..... ... ..... ..... ...
 1
 </code></pre>
@@ -277,17 +276,17 @@ adam
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">var</span> <span class="n">myMusic</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
-        <span class="s2">&#34;artist&#34;</span><span class="p">:</span> <span class="s2">&#34;Billy Joel&#34;</span><span class="p">,</span>
-        <span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Piano Man&#34;</span><span class="p">,</span>
-        <span class="s2">&#34;release_year&#34;</span><span class="p">:</span> <span class="mi">1973</span><span class="p">,</span>
-        <span class="s2">&#34;formats&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;CD&#34;</span><span class="p">,</span> <span class="s2">&#34;ST&#34;</span><span class="p">,</span> <span class="s2">&#34;LP&#34;</span><span class="p">],</span> 
-        <span class="s2">&#34;gold&#34;</span><span class="p">:</span> <span class="n">true</span>
+        <span class="sa"></span><span class="s2">&#34;artist&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;Billy Joel&#34;</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;Piano Man&#34;</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;release_year&#34;</span><span class="p">:</span> <span class="mi">1973</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;formats&#34;</span><span class="p">:</span> <span class="p">[</span><span class="sa"></span><span class="s2">&#34;CD&#34;</span><span class="p">,</span> <span class="sa"></span><span class="s2">&#34;ST&#34;</span><span class="p">,</span> <span class="sa"></span><span class="s2">&#34;LP&#34;</span><span class="p">],</span> 
+        <span class="sa"></span><span class="s2">&#34;gold&#34;</span><span class="p">:</span> <span class="n">true</span>
     <span class="p">},{</span>
-        <span class="s2">&#34;artist&#34;</span><span class="p">:</span> <span class="s2">&#34;Bobby&#34;</span><span class="p">,</span>
-        <span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Creal&#34;</span><span class="p">,</span>
-        <span class="s2">&#34;release_year&#34;</span><span class="p">:</span> <span class="mi">2009</span><span class="p">,</span>
-        <span class="s2">&#34;formats&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;youtube videos&#34;</span><span class="p">],</span> 
-        <span class="s2">&#34;gold&#34;</span><span class="p">:</span> <span class="n">true</span>
+        <span class="sa"></span><span class="s2">&#34;artist&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;Bobby&#34;</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="sa"></span><span class="s2">&#34;Creal&#34;</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;release_year&#34;</span><span class="p">:</span> <span class="mi">2009</span><span class="p">,</span>
+        <span class="sa"></span><span class="s2">&#34;formats&#34;</span><span class="p">:</span> <span class="p">[</span><span class="sa"></span><span class="s2">&#34;youtube videos&#34;</span><span class="p">],</span> 
+        <span class="sa"></span><span class="s2">&#34;gold&#34;</span><span class="p">:</span> <span class="n">true</span>
     <span class="p">}</span>
 <span class="p">]</span>
 
@@ -397,7 +396,7 @@ adam
 <span class="n">function</span> <span class="n">convertToInteger</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">parseInt</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">base</span> <span class="p">;</span> <span class="n">radix</span> <span class="n">argument</span>
 <span class="p">}</span>
-<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">convertToInteger</span><span class="p">(</span><span class="s2">&#34;10011&#34;</span><span class="p">))</span></code></pre></div>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">convertToInteger</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;10011&#34;</span><span class="p">))</span></code></pre></div>
 <pre><code>... ...
 19
 </code></pre>
@@ -416,7 +415,7 @@ false
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">function</span> <span class="n">checkSign</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="err">?</span> <span class="s2">&#34;positive&#34;</span> <span class="p">:</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="err">?</span> <span class="s2">&#34;negative&#34;</span> <span class="p">:</span> <span class="s2">&#34;zero&#34;</span> <span class="o">//</span> <span class="n">multiple</span> <span class="n">conditions</span>
+    <span class="k">return</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="err">?</span> <span class="sa"></span><span class="s2">&#34;positive&#34;</span> <span class="p">:</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="err">?</span> <span class="sa"></span><span class="s2">&#34;negative&#34;</span> <span class="p">:</span> <span class="sa"></span><span class="s2">&#34;zero&#34;</span> <span class="o">//</span> <span class="n">multiple</span> <span class="n">conditions</span>
 <span class="p">}</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">checkSign</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span></code></pre></div>
 <pre><code>... ...
@@ -434,7 +433,7 @@ zero
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">function</span> <span class="n">printManyTimes</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="p">{</span>
-    <span class="s2">&#34;use strict&#34;</span><span class="p">;</span> <span class="o">//</span> <span class="n">catches</span> <span class="n">common</span> <span class="n">coding</span> <span class="n">mistakes</span><span class="o">.</span> <span class="n">such</span> <span class="k">as</span> <span class="k">if</span> <span class="n">you</span> <span class="n">create</span> <span class="n">a</span> <span class="n">varible</span> <span class="n">but</span> <span class="n">don</span><span class="s1">&#39;t declare it.</span><span class="err">
+    <span class="sa"></span><span class="s2">&#34;use strict&#34;</span><span class="p">;</span> <span class="o">//</span> <span class="n">catches</span> <span class="n">common</span> <span class="n">coding</span> <span class="n">mistakes</span><span class="o">.</span> <span class="n">such</span> <span class="k">as</span> <span class="k">if</span> <span class="n">you</span> <span class="n">create</span> <span class="n">a</span> <span class="n">varible</span> <span class="n">but</span> <span class="n">don</span><span class="sa"></span><span class="s1">&#39;t declare it.</span><span class="err">
 </span><span class="err"></span><span class="s1">    const SENTENCE = str + &#34; is cool&#34;;</span><span class="err">
 </span><span class="err"></span><span class="s1">    for(let i = 0; i&lt; str.length; i+=2){</span><span class="err">
 </span><span class="err"></span><span class="s1">        console.log(SENTENCE)</span><span class="err">
@@ -548,7 +547,7 @@ art is cool
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 17 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
+            <span class="text-muted">This project contains 16 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
         </div>
     </footer>
 

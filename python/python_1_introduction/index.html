@@ -38,10 +38,9 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Python 1 : Introduction"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Python 1 : Introduction"/>
 <meta name="twitter:description" content="Introduction to Python"/>
-<meta name="generator" content="Hugo 0.40.1" /> 
+<meta name="generator" content="Hugo 0.30" /> 
     
     
 <script type="application/ld+json">
@@ -236,16 +235,16 @@ SyntaxError: invalid syntax
 <pre><code>5.0
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#Strings</span>
-<span class="s1">&#39;hello&#39;</span> </code></pre></div>
+<span class="sa"></span><span class="s1">&#39;hello&#39;</span> </code></pre></div>
 <pre><code>'hello'
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#or</span>
-<span class="s2">&#34;hello&#34;</span>
+<span class="sa"></span><span class="s2">&#34;hello&#34;</span>
 <span class="c1">#both works</span></code></pre></div>
 <pre><code>'hello'
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#If you want to say something like &#39;let&#39;s go&#39; in strings just wrap it with double quatation.</span>
-<span class="s2">&#34;let&#39;s go&#34;</span></code></pre></div>
+<span class="sa"></span><span class="s2">&#34;let&#39;s go&#34;</span></code></pre></div>
 <pre><code>&quot;let's go&quot;
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#Booleans</span>
@@ -263,7 +262,7 @@ SyntaxError: invalid syntax
 </code></pre>
 
 <p>You can add strings. When you do it, they are placed together. For example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="s1">&#39;ab&#39;</span><span class="o">+</span><span class="s1">&#39;cd&#39;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="sa"></span><span class="s1">&#39;ab&#39;</span><span class="o">+</span><span class="sa"></span><span class="s1">&#39;cd&#39;</span></code></pre></div>
 <pre><code>'abcd'
 </code></pre>
 
@@ -294,14 +293,14 @@ SyntaxError: invalid syntax
 <h3 id="lists">Lists</h3>
 
 <p>to create a list, use brackets []. Lists can contain any data types. Floats, booleans, strings, integers; anything.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[</span><span class="sa"></span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="sa"></span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="sa"></span><span class="s1">&#39;c&#39;</span><span class="p">]</span></code></pre></div>
 <pre><code>['a', 'b', 'c']
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">heights</span><span class="o">=</span><span class="p">[</span><span class="mf">1.73</span><span class="p">,</span> <span class="mf">1.82</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">,</span><span class="mf">1.90</span><span class="p">]</span></code></pre></div>
 <p>Lists can also contain different types of data in one list.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">heights2</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;berk&#39;</span><span class="p">,</span> <span class="mf">1.73</span><span class="p">,</span> <span class="s1">&#39;salih&#39;</span><span class="p">,</span> <span class="mf">1.82</span><span class="p">,</span> <span class="s1">&#39;dad&#39;</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">,</span> <span class="s1">&#39;mum&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">65</span><span class="p">]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">heights2</span><span class="o">=</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;berk&#39;</span><span class="p">,</span> <span class="mf">1.73</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;salih&#39;</span><span class="p">,</span> <span class="mf">1.82</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;dad&#39;</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;mum&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">65</span><span class="p">]</span></code></pre></div>
 <p>Lists can also contain other lists.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">heights3</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;berk&#39;</span><span class="p">,</span> <span class="mf">1.73</span><span class="p">],[</span><span class="s1">&#39;salih&#39;</span><span class="p">,</span> <span class="mf">1.82</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;dad&#39;</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;mum&#39;</span><span class="p">,</span><span class="mf">1.65</span><span class="p">]]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">heights3</span><span class="o">=</span><span class="p">[[</span><span class="sa"></span><span class="s1">&#39;berk&#39;</span><span class="p">,</span> <span class="mf">1.73</span><span class="p">],[</span><span class="sa"></span><span class="s1">&#39;salih&#39;</span><span class="p">,</span> <span class="mf">1.82</span><span class="p">],</span> <span class="p">[</span><span class="sa"></span><span class="s1">&#39;dad&#39;</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">],</span> <span class="p">[</span><span class="sa"></span><span class="s1">&#39;mum&#39;</span><span class="p">,</span><span class="mf">1.65</span><span class="p">]]</span></code></pre></div>
 <h3 id="list-indexing">List Indexing</h3>
 
 <p>To print specific elements of a list you can use indexing. Python indexes data as
@@ -371,7 +370,7 @@ TypeError: 'set' object does not support indexing
 <h3 id="dictionaries">Dictionaries</h3>
 
 <p>Dictionaries are key and value pairs. They also do not support indexing. Dictionaries do not hold elements in sequence. Instead you can call their values by the keys.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;key1&#39;</span><span class="p">:</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="s1">&#39;value2&#39;</span><span class="p">}</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span><span class="o">=</span><span class="p">{</span><span class="sa"></span><span class="s1">&#39;key1&#39;</span><span class="p">:</span><span class="sa"></span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="sa"></span><span class="s1">&#39;value2&#39;</span><span class="p">}</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></code></pre></div>
 <pre><code>---------------------------------------------------------------------------
 
 KeyError                                  Traceback (most recent call last)
@@ -382,7 +381,7 @@ KeyError                                  Traceback (most recent call last)
 
 KeyError: 0
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;key1&#39;</span><span class="p">]</span></code></pre></div>
 <pre><code>'value'
 </code></pre>
 
@@ -409,7 +408,7 @@ KeyError: 0
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 17 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
+            <span class="text-muted">This project contains 16 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
         </div>
     </footer>
 

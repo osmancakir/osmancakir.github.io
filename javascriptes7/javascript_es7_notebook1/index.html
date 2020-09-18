@@ -38,10 +38,9 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Javascript ES7 1 : Introduction"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Javascript ES7 1 : Introduction"/>
 <meta name="twitter:description" content="Javascript ES7 Functionalities"/>
-<meta name="generator" content="Hugo 0.40.1" /> 
+<meta name="generator" content="Hugo 0.30" /> 
     
     
 <script type="application/ld+json">
@@ -212,7 +211,7 @@ pixiedust_node 0.2.5 started. Cells starting '%%node' may contain Node.js code.
 <hr />
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="o">//</span> <span class="n">to</span> <span class="k">print</span> <span class="n">something</span>
-<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">);</span></code></pre></div>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;hello world&#39;</span><span class="p">);</span></code></pre></div>
 <pre><code>hello world
 </code></pre>
 
@@ -223,15 +222,15 @@ pixiedust_node 0.2.5 started. Cells starting '%%node' may contain Node.js code.
 <span class="n">var</span> <span class="n">a</span> <span class="o">//</span> <span class="n">declares</span> <span class="n">a</span> <span class="n">variable</span>
 <span class="n">var</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="o">//</span> <span class="n">declares</span> <span class="ow">and</span> <span class="n">assign</span> <span class="n">the</span> <span class="n">variable</span>
 <span class="n">a</span> <span class="o">=</span><span class="mi">3</span> <span class="o">//</span> <span class="n">just</span> <span class="n">assigns</span>
-<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">//</span> <span class="n">let</span><span class="s1">&#39;s see a at the console</span></code></pre></div>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">//</span> <span class="n">let</span><span class="sa"></span><span class="s1">&#39;s see a at the console</span></code></pre></div>
 <pre><code>3
 </code></pre>
 
 <p>Other ways of declaring a variable are &lsquo;let&rsquo; and &lsquo;const&rsquo;. It is recommended to use let and const to declare variables wherever possible opposed to &lsquo;var&rsquo; method. It will prevent many bugs!</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span> 
 <span class="n">var</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="o">//</span> <span class="n">declaring</span> <span class="n">a</span> <span class="n">variable</span> <span class="k">with</span> <span class="n">var</span> <span class="n">makes</span> <span class="n">it</span> <span class="n">usable</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">programme</span> <span class="p">(</span><span class="k">global</span><span class="p">)</span>
-<span class="n">var</span> <span class="n">myname</span> <span class="o">=</span> <span class="s1">&#39;osman&#39;</span>
-<span class="n">let</span> <span class="n">ourName</span> <span class="o">=</span> <span class="s1">&#39;freefall&#39;</span> <span class="o">//</span> <span class="n">only</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="n">within</span> <span class="n">the</span> <span class="n">scope</span>
+<span class="n">var</span> <span class="n">myname</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;osman&#39;</span>
+<span class="n">let</span> <span class="n">ourName</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;freefall&#39;</span> <span class="o">//</span> <span class="n">only</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="n">within</span> <span class="n">the</span> <span class="n">scope</span>
 <span class="n">const</span> <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span> <span class="o">//</span> <span class="n">a</span> <span class="n">variable</span> <span class="n">that</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">changeable</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span></code></pre></div>
 <pre><code>3.14
@@ -284,8 +283,8 @@ pixiedust_node 0.2.5 started. Cells starting '%%node' may contain Node.js code.
 
 <p><strong>Strings can be added too</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">mystring</span> <span class="o">=</span> <span class="s1">&#39;I am a&#39;</span>
-<span class="n">var</span> <span class="n">yourstring</span> <span class="o">=</span> <span class="s1">&#39; string&#39;</span> 
+<span class="n">var</span> <span class="n">mystring</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;I am a&#39;</span>
+<span class="n">var</span> <span class="n">yourstring</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39; string&#39;</span> 
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">mystring</span> <span class="o">+</span> <span class="n">yourstring</span><span class="p">)</span></code></pre></div>
 <pre><code>I am a string
 </code></pre>
@@ -321,17 +320,17 @@ These two statements are equivalent in JS. with compound assignment with augment
 
 <h2 id="7-declare-string-variables">7 - Declare String Variables</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">firstName</span> <span class="o">=</span> <span class="s1">&#39;Alan&#39;</span>
-<span class="n">var</span> <span class="n">myFirstName</span> <span class="o">=</span> <span class="s1">&#39;Carnes&#39;</span></code></pre></div>
+<span class="n">var</span> <span class="n">firstName</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;Alan&#39;</span>
+<span class="n">var</span> <span class="n">myFirstName</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;Carnes&#39;</span></code></pre></div>
 <ul>
 <li><strong>Escaping in JS</strong></li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">myStr1</span> <span class="o">=</span> <span class="s2">&#34;I am a </span><span class="se">\&#34;</span><span class="s2">double quoted</span><span class="se">\&#34;</span><span class="s2"> string inside&#34;</span>
-<span class="n">var</span> <span class="n">myStr2</span> <span class="o">=</span> <span class="s2">&#34;&lt;a href=\http://example.com</span><span class="se">\&#34;</span><span class="s2"> target=</span><span class="se">\&#34;</span><span class="s2">blank</span><span class="se">\&#34;</span><span class="s2">&gt;Link&lt;/a&gt;&#34;</span><span class="p">;</span>
-<span class="n">var</span> <span class="n">myStr3</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&#34;http://example.com&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;&#39;</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">myStr1</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;I am a </span><span class="se">\&#34;</span><span class="s2">double quoted</span><span class="se">\&#34;</span><span class="s2"> string inside&#34;</span>
+<span class="n">var</span> <span class="n">myStr2</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;&lt;a href=\http://example.com</span><span class="se">\&#34;</span><span class="s2"> target=</span><span class="se">\&#34;</span><span class="s2">blank</span><span class="se">\&#34;</span><span class="s2">&gt;Link&lt;/a&gt;&#34;</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">myStr3</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;&lt;a href=&#34;http://example.com&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;&#39;</span><span class="p">;</span>
 <span class="o">/*</span> <span class="n">Code</span> <span class="n">output</span>
-\<span class="s1">&#39; single quote</span><span class="err">
+\<span class="sa"></span><span class="s1">&#39; single quote</span><span class="err">
 </span><span class="err"></span><span class="se">\&#34;</span><span class="s1"> double quote</span><span class="err">
 </span><span class="err"></span><span class="se">\\</span><span class="s1"> backslash </span><span class="err">
 </span><span class="err"></span><span class="se">\n</span><span class="s1"> newline</span><span class="err">
@@ -358,13 +357,13 @@ Thirdline
 <li><strong>Concatenate Strings</strong></li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">ourStr</span> <span class="o">=</span> <span class="s2">&#34;I come first. &#34;</span> <span class="o">+</span> <span class="s2">&#34;I come second&#34;</span>
+<span class="n">var</span> <span class="n">ourStr</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;I come first. &#34;</span> <span class="o">+</span> <span class="sa"></span><span class="s2">&#34;I come second&#34;</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ourStr</span><span class="p">);</span>
-<span class="n">var</span> <span class="n">myName</span> <span class="o">=</span> <span class="s2">&#34;osman &#34;</span>
-<span class="n">var</span> <span class="n">myStr1</span> <span class="o">=</span> <span class="s2">&#34;my name is &#34;</span> <span class="o">+</span> <span class="n">myName</span>
+<span class="n">var</span> <span class="n">myName</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;osman &#34;</span>
+<span class="n">var</span> <span class="n">myStr1</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;my name is &#34;</span> <span class="o">+</span> <span class="n">myName</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">myStr1</span><span class="p">);</span>
-<span class="n">var</span> <span class="n">myStr2</span> <span class="o">=</span> <span class="s1">&#39;This is the first sentence. &#39;</span>
-<span class="n">myStr2</span> <span class="o">+=</span> <span class="s1">&#39;This is the second sentence&#39;</span>
+<span class="n">var</span> <span class="n">myStr2</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;This is the first sentence. &#39;</span>
+<span class="n">myStr2</span> <span class="o">+=</span> <span class="sa"></span><span class="s1">&#39;This is the second sentence&#39;</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">myStr2</span><span class="p">)</span>
 <span class="n">myStr1</span> <span class="o">+=</span> <span class="n">myStr2</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">myStr1</span><span class="p">)</span></code></pre></div>
@@ -388,7 +387,7 @@ my name is osman This is the first sentence. This is the second sentence
 <li><strong>Bracket notation to find the first character (0 based indexing)</strong></li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">firstLetterOfStr</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+<span class="n">var</span> <span class="n">firstLetterOfStr</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;&#34;</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">firstLetterOfStr</span><span class="p">)</span>
 <span class="n">firstLetterOfStr</span> <span class="o">=</span> <span class="n">myStr1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">firstLetterOfStr</span><span class="p">)</span></code></pre></div>
@@ -399,7 +398,7 @@ my name is osman This is the first sentence. This is the second sentence
 <li><strong>You can find the any characters position using the brackets</strong></li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">firstName</span> <span class="o">=</span> <span class="s1">&#39;Ada&#39;</span>
+<span class="n">var</span> <span class="n">firstName</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;Ada&#39;</span>
 <span class="n">var</span> <span class="n">lastletter</span> <span class="o">=</span> <span class="n">firstName</span><span class="p">[</span><span class="n">firstName</span><span class="o">.</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">lastletter</span><span class="p">)</span></code></pre></div>
 <pre><code>a
@@ -409,9 +408,9 @@ my name is osman This is the first sentence. This is the second sentence
 <li><strong>String Immutability</strong></li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
-<span class="n">var</span> <span class="n">myStr0</span> <span class="o">=</span> <span class="s1">&#39;jello world&#39;</span>
-<span class="o">//</span> <span class="n">this</span> <span class="n">won</span><span class="s1">&#39;t work!: myStr0[0] = &#39;</span><span class="n">H</span><span class="s1">&#39;</span><span class="err">
-</span><span class="err"></span><span class="s1">myStr0 = &#39;</span><span class="n">hello</span> <span class="n">world</span> <span class="n">would</span> <span class="n">work</span><span class="s1">&#39;</span><span class="err">
+<span class="n">var</span> <span class="n">myStr0</span> <span class="o">=</span> <span class="sa"></span><span class="s1">&#39;jello world&#39;</span>
+<span class="o">//</span> <span class="n">this</span> <span class="n">won</span><span class="sa"></span><span class="s1">&#39;t work!: myStr0[0] = &#39;</span><span class="n">H</span><span class="sa"></span><span class="s1">&#39;</span><span class="err">
+</span><span class="err"></span><span class="s1">myStr0 = &#39;</span><span class="n">hello</span> <span class="n">world</span> <span class="n">would</span> <span class="n">work</span><span class="sa"></span><span class="s1">&#39;</span><span class="err">
 </span><span class="err"></span><span class="s1">console.log(myStr0)</span></code></pre></div>
 <pre><code>hello world would work
 </code></pre>
@@ -423,12 +422,12 @@ my name is osman This is the first sentence. This is the second sentence
 <p>Just to let you know the fun has not even started yet. We will take a closer look at functions of course.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%%</span><span class="n">node</span>
 <span class="n">function</span> <span class="n">wordBlanks</span><span class="p">(</span><span class="n">myNoun</span><span class="p">,</span> <span class="n">myAdjective</span><span class="p">,</span> <span class="n">myVerb</span><span class="p">,</span> <span class="n">myAdverb</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
-    <span class="n">result</span> <span class="o">+=</span> <span class="s2">&#34;The &#34;</span> <span class="o">+</span> <span class="n">myAdjective</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">myNoun</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">myVerb</span> <span class="o">+</span> <span class="s2">&#34; its&#39; tail.&#34;</span>
+    <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="sa"></span><span class="s2">&#34;&#34;</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="sa"></span><span class="s2">&#34;The &#34;</span> <span class="o">+</span> <span class="n">myAdjective</span> <span class="o">+</span> <span class="sa"></span><span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">myNoun</span> <span class="o">+</span> <span class="sa"></span><span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">myVerb</span> <span class="o">+</span> <span class="sa"></span><span class="s2">&#34; its&#39; tail.&#34;</span>
     <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">wordBlanks</span><span class="p">(</span><span class="s2">&#34;snake&#34;</span><span class="p">,</span> <span class="s2">&#34;big&#34;</span><span class="p">,</span> <span class="s2">&#34;ate&#34;</span><span class="p">,</span> <span class="s2">&#34;quickly&#34;</span><span class="p">))</span></code></pre></div>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">wordBlanks</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;snake&#34;</span><span class="p">,</span> <span class="sa"></span><span class="s2">&#34;big&#34;</span><span class="p">,</span> <span class="sa"></span><span class="s2">&#34;ate&#34;</span><span class="p">,</span> <span class="sa"></span><span class="s2">&#34;quickly&#34;</span><span class="p">))</span></code></pre></div>
 <pre><code>... ... ... ...
 The big snake ate its' tail.
 </code></pre>
@@ -460,7 +459,7 @@ The big snake ate its' tail.
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 17 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
+            <span class="text-muted">This project contains 16 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
         </div>
     </footer>
 

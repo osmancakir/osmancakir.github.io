@@ -38,10 +38,9 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Python 2 : Manipulating Lists"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Python 2 : Manipulating Lists"/>
 <meta name="twitter:description" content="Python tutorial 2 manipulating lists"/>
-<meta name="generator" content="Hugo 0.40.1" /> 
+<meta name="generator" content="Hugo 0.30" /> 
     
     
 <script type="application/ld+json">
@@ -165,19 +164,19 @@ MathJax.Hub.Config({
   
 
 <p>First let&rsquo;s create a list called cars</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;porsche&#39;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;audi&#39;</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span> <span class="s1">&#39;mercedes&#39;</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="s1">&#39;bmw&#39;</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span> <span class="s1">&#39;vw&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="o">=</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;porsche&#39;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;audi&#39;</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;mercedes&#39;</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;bmw&#39;</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;vw&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">]</span></code></pre></div>
 <p><strong>Changing Elements</strong> is easy. Call the element by it&rsquo;s index and equal to something else.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;skoda&#39;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;skoda&#39;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
 <pre><code>['porsche', 60, 'audi', 37, 'mercedes', 45, 'bmw', 43, 'skoda', 32]
 </code></pre>
 
 <p>You can change multiple entries analoguously.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="p">[</span><span class="mi">8</span><span class="p">:]</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;fiat&#39;</span><span class="p">,</span><span class="mi">22</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="p">[</span><span class="mi">8</span><span class="p">:]</span><span class="o">=</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;fiat&#39;</span><span class="p">,</span><span class="mi">22</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
 <pre><code>['porsche', 60, 'audi', 37, 'mercedes', 45, 'bmw', 43, 'fiat', 22]
 </code></pre>
 
 <p><strong>Adding Elements</strong> might be even easier. Just call your list and add something to it.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;lancia&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span> <span class="o">+</span> <span class="p">[</span><span class="sa"></span><span class="s1">&#39;lancia&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span></code></pre></div>
 <pre><code>['porsche',
  60,
  'audi',
@@ -198,7 +197,7 @@ MathJax.Hub.Config({
 </code></pre>
 
 <p>If you want to save it, you can give a new name to your list . If you want the changes to be saved in the list you are working on you should use .append() method. (We will cover methods and functions of Python later in more detail, so no worries!)</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars_ext</span><span class="o">=</span><span class="n">cars</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;lancia&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars_ext</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars_ext</span><span class="o">=</span><span class="n">cars</span> <span class="o">+</span> <span class="p">[</span><span class="sa"></span><span class="s1">&#39;lancia&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars_ext</span></code></pre></div>
 <pre><code>['porsche',
  60,
  'audi',
@@ -212,7 +211,7 @@ MathJax.Hub.Config({
  'lancia',
  33]
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;lancia&#39;</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;lancia&#39;</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
 <pre><code>['porsche', 60, 'audi', 37, 'mercedes', 45, 'bmw', 43, 'fiat', 22, 'lancia']
 </code></pre>
 
@@ -224,10 +223,10 @@ MathJax.Hub.Config({
 <p><strong>Another important note</strong> When you create a list such as cars here, the variable name cars is just a reference where your list is stored. lets say you created another list (cars2) which is equal to cars (cars=cars2) and then changed one element in cars2. Your cars list will be also affected by this change. Python does not copy unless you specifically copy the list. You can copy the list by:
 * cars2=list(cars)
 * cars2=cars[:]</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="o">=</span><span class="n">cars</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;ferrari&#39;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="o">=</span><span class="n">cars</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;ferrari&#39;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
 <pre><code>['ferrari', 60, 'audi', 37, 'mercedes', 45, 'bmw', 43, 'fiat', 22]
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;porsche&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;audi&#39;</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="s1">&#39;mercedes&#39;</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="s1">&#39;bmw&#39;</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="s1">&#39;fiat&#39;</span><span class="p">,</span> <span class="mi">22</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;ferrari&#39;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span><span class="o">=</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;porsche&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;audi&#39;</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;mercedes&#39;</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;bmw&#39;</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;fiat&#39;</span><span class="p">,</span> <span class="mi">22</span><span class="p">]</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sa"></span><span class="s1">&#39;ferrari&#39;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars</span></code></pre></div>
 <pre><code>['porsche', 60, 'audi', 37, 'mercedes', 45, 'bmw', 43, 'fiat', 22]
 </code></pre>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">cars2</span></code></pre></div>
@@ -291,7 +290,7 @@ MathJax.Hub.Config({
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 17 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
+            <span class="text-muted">This project contains 16 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
         </div>
     </footer>
 
