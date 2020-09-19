@@ -6,20 +6,31 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Sep 2020 06:53:49 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2020 03:53:49 -0700</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Haftanin Notlari 1</title>
+      <title>Command Line Syntax</title>
+      <link>https://osmancakir.io/notebooks/command-line-syntax/</link>
+      <pubDate>Sat, 19 Sep 2020 03:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/notebooks/command-line-syntax/</guid>
+      <description>The source for the table: microsoft documentation:
+The following table describes the notation used to indicate command-line syntax. Command-line syntax key
+   Notation Description     Text without brackets or braces Items you must type as shown.   &amp;lt;Text inside angle brackets&amp;gt; Placeholder for which you must supply a value.   [Text inside square brackets] Optional items.   {Text inside braces} Set of required items.</description>
+    </item>
+    
+    <item>
+      <title>Haftanin Notlari - 1</title>
       <link>https://osmancakir.io/articles/historical_revision/</link>
       <pubDate>Fri, 18 Sep 2020 06:53:49 -0700</pubDate>
       
       <guid>https://osmancakir.io/articles/historical_revision/</guid>
-      <description>Capsule Wardrobe, Türkcesi kapsül gardirop&amp;rsquo;tur heralde. Bir arkadasimdan ögrendim. Az kiyafetle de iyi görünebilmek icin oldukca iyi bir yöntem gibi geldi.
- Kalben&amp;rsquo;in bende kal parcasi baya iyi club parcasi aslinda.
- Bu hafta 10binden fazla yapay zeka ile üretilmis / derive edilmis insan portresine baktim. 4 fotografdan 3&amp;rsquo;ü oldukca iyi kalitede cikiyor. Ilginc bir web sitesi, suradan bakabilirsiniz. This person does not exist Sanat icin versiyonu da basarili oldukca.</description>
+      <description>Capsule Wardrobe, Türkcesi kapsül gardirop&amp;rsquo;tur heralde. Ev arkadasimdan ögrendim. Az kiyafetle de iyi görünebilmek icin oldukca iyi bir yöntem gibi geldi. Kendimce basladim bakalim. Biraz daha olgunlassin ayri bir postun konusu olabilir bu denemem.
+ Kalben&amp;rsquo;in bende kal parcasi baya iyi club parcasi aslinda. Müzik biraz fazla Billie Eilish andiriyor, Bad guy parcasini 0.75 hizda ve daha sade hayal edin. Canlandi degil mi?
+ Bu hafta 10binden fazla yapay zeka ile üretilmis / derive edilmis insan portresine baktim.</description>
     </item>
     
     <item>
