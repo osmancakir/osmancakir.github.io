@@ -6,10 +6,19 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2020 06:53:49 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 06:53:49 -0700</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Haftanin Notlari - 3</title>
+      <link>https://osmancakir.io/articles/haftanin-notlari-3/</link>
+      <pubDate>Fri, 02 Oct 2020 06:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/articles/haftanin-notlari-3/</guid>
+      <description>Gecen hafta bahsettigim diger siyah sincabi da görmek ister misiniz?   Web sitemde artik contact form var. Bu kadar kolay olabilecegini hic sanmiyordum. Bu web sitesi statik, JAM stack bir web sitesi oldugu icin bir serveri yok, bir email serveri da yok. Ama bunu serverless cözen appler varmis. Basit bir html kodu yapistiriyorsunuz hop oldu bitti. Contact form simdilik ana sayfada en altta. Oturup site temasina uygun bir css yazmadim henüz o yüzden retarded görünüyor kusura bakmayin ama yazin yine de.</description>
+    </item>
     
     <item>
       <title>Haftanin Notlari - 2</title>
