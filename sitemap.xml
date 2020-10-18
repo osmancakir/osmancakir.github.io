@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://osmancakir.io/articles/ducane-cundioglu/</loc>
+    <lastmod>2020-10-17T01:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://osmancakir.io/articles/haftanin-notlari-5/</loc>
     <lastmod>2020-10-16T01:53:49-07:00</lastmod>
   </url>
@@ -118,7 +123,7 @@
   
   <url>
     <loc>https://osmancakir.io/</loc>
-    <lastmod>2020-10-16T01:53:49-07:00</lastmod>
+    <lastmod>2020-10-17T01:53:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
