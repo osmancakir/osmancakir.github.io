@@ -6,10 +6,19 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2020 01:53:49 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2020 01:53:49 -0700</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Haftanin Notlari - 6</title>
+      <link>https://osmancakir.io/articles/haftanin-notlari-6/</link>
+      <pubDate>Sun, 25 Oct 2020 01:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/articles/haftanin-notlari-6/</guid>
+      <description>Bu haftanin notu da yine anca pazar gününe yetisti. Tam bir sonbahar haftasonu oldu. Hava 15 17 derece arasinda idi. Is yerinde garip bir olay yasadim. Benim önerdigim ve implement etmek istedigim bir feauture&amp;rsquo;a takim arkadasim yardim etmek istedi. Ve yapti da ama sonra yazilan kodda bir problem oldu ve cözümünün zor olduguna karar veren takim arkadasim feature&amp;rsquo;in bu haliyle productiona gidemeyecegini söyledi. Sanki ben problemli bir kodu productiona gecmesi icin zorluyormusum gibi göründü.</description>
+    </item>
     
     <item>
       <title>Insani Anlamak - Dücane Cindioglu Youtube Söylesisi Notlari</title>
