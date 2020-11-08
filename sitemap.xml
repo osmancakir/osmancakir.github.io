@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://osmancakir.io/articles/haftanin-notlari-8/</loc>
+    <lastmod>2020-11-08T01:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://osmancakir.io/notebooks/music-for-coding-and-not-coding/</loc>
+    <lastmod>2020-11-08T01:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://osmancakir.io/articles/haftanin-notlari-7/</loc>
     <lastmod>2020-11-01T01:53:49-07:00</lastmod>
   </url>
@@ -133,7 +143,7 @@
   
   <url>
     <loc>https://osmancakir.io/</loc>
-    <lastmod>2020-11-01T01:53:49-07:00</lastmod>
+    <lastmod>2020-11-08T01:53:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
