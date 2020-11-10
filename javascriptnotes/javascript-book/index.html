@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130208509-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130208509-1');
+    </script>
+
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Javascript Book with ES7 Features" />
+<meta property="og:description" content="A Javascript book to understand the syntax and fundementals with ES7 features" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://osmancakir.io/javascriptnotes/javascript-book/" />
+
+
+
+<meta property="article:published_time" content="2020-09-03T11:53:49-07:00"/>
+
+<meta property="article:modified_time" content="2020-09-03T11:53:49-07:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Javascript Book with ES7 Features"/>
+<meta name="twitter:description" content="A Javascript book to understand the syntax and fundementals with ES7 features"/>
+<meta name="generator" content="Hugo 0.30" /> 
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Javascript Book with ES7 Features",
+  "url": "https://osmancakir.io/javascriptnotes/javascript-book/",
+  "wordCount": "1731",
+  "datePublished": "2020-09-03T11:53:49-07:00",
+  "dateModified": "2020-09-03T11:53:49-07:00",
+  "author": {
+    "@type": "Person",
+    "name": "Osman Cakir"
+  },
+  "description": "A Javascript book to understand the syntax and fundementals with ES7 features"
+}
+</script> 
+
+    <title>Javascript Book with ES7 Features</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+     
+    <link rel="stylesheet" href="https://osmancakir.io/css/custom.css">
+    <link rel="stylesheet" href="https://osmancakir.io/css/syntax.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
+        
+    <link href="" rel="alternate" type="application/rss+xml" title="osman cakir" /> 
+    
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://osmancakir.io">Osman Cakir</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://osmancakir.io#notebooks">Notebooks</a>
+                            <a class="dropdown-item" href="https://osmancakir.io#javascriptnotes">Javascript Notes</a>
+                            
+                            
+                            <a class="dropdown-item" href="https://osmancakir.io#python">Python Notes</a>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://osmancakir.io#articles">Turkish</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://osmancakir.io/about/osman_cakir/">About Osman</a>
+                            <a class="dropdown-item" href="https://github.com/osmancakir">GitHub</a>
+                            <a class="dropdown-item" href="https://twitter.com/osmancakirio">Twitter</a>
+                            <a class="dropdown-item" href="https://www.instagram.com/osmancakirio/">Instagram</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://osmancakir.io#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                 
+
+
+<article>
+  <div class="technical_note">
+  <header>
+      <div class="alert alert-warning flashcard_ad" role="alert">
+          Would you like to support my research and work? <a href="https://www.paypal.me/osmancakirio" class="alert-link">My paypal link is here!.</a> Thank you, I will remember you!
+      </div>
+    <h1 class="technical_note_title">Javascript Book with ES7 Features</h1>
+    <div class="technical_note_date">
+      <time datetime=" 2020-09-03T11:53:49-07:00 "> 03 Sep 2020</time>
+    </div>
+  </header>
+  <div class="content">
+  
+
+<p>I wrote a javascript book over the years I started to learn it. I wasn&rsquo;t purposefully writing it to make it readable or understandable for other learners, rather my sole aim was understanding it myself. I collected example codes and explanations from various resources and didn&rsquo;t pay attention to the bibliography of it. So please if you see your example and explanation in this document and want to have it changed or take credit for it, contact me by the <a href="https://osmancakir.io/#contact">contact form</a> or by <a href="https://twitter.com/osmancakirio">twitter.</a></p>
+
+<p>I will try to structure it in a way you can start reading the book from top to bottom. But in the beginning, I am afraid I won&rsquo;t be very successful at it. I promise it will get better in time. I will also recommend memorizing especially the definitions even if you don&rsquo;t grasp them as a whole. Because if you build that memory, it will be more easy to make sense of it when I explain that topic or definition in more detail as we progress in the book. In my opinion, this approach is almost a requirement for learning a programming language. Because however you try to make it understandable as step-by-step, you will be lost at some point due to the interconnectivity of the concepts. Memorizing key definitions and feautures will be like loading the programming language into your brain and you will be first able to some sort of &lsquo;speak the language&rsquo; before being able to code.</p>
+
+<p>The sections and examples of this book will be divided into different notebooks on this website too. So people can look exactly what they need, without searching the whole document.</p>
+
+<h2 id="general-info">General Info</h2>
+
+<p>Javascript is an interpreted language. It is not compiled like C. When you write your javascript code it needs an interpreter to run. Interpreters read your code line by line from top to bottom and execute them. Each browser has its own JavaScript engine, which either interprets the code or uses some sort of lazy compilation.
+Javascript engine means Javascript interpreter? MOST PROBABLY.</p>
+
+<ul>
+<li>Chrome: V8,</li>
+<li>Firefox : SpiderMonkey,</li>
+<li>Safari: JavaScriptCore, etc&hellip;</li>
+</ul>
+
+<p>They each implement the ECMAScript standard, but may differ for anything not defined by the standard.</p>
+
+<h2 id="javascript-data-types">Javascript Data Types</h2>
+
+<p>There are two different category for data types in Javascript.</p>
+
+<ul>
+<li>Primitive Data Types</li>
+<li>Objects</li>
+</ul>
+
+<p>Javascript defines 5 types of primitive data types:</p>
+
+<ul>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>null</li>
+<li>undefined</li>
+</ul>
+
+<p><strong>A primitive data type</strong> is data that has a primitive value.
+<strong>A primitive value</strong> is a value that has no properties or methods.</p>
+
+<p>And everyting else in Js are objects.</p>
+
+<p>When you think of objects you should think of C structs. C structures contain a number of &lsquo;fields&rsquo; or &lsquo;members&rsquo; which we might call &lsquo;properties&rsquo; in object-oriented jargon. But properties themselves can not ever stand on their own. For example in below C code I declared a struct type car.</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="k">struct</span> <span class="n">car</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">model</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+<span class="p">}</span></code></pre></div>
+<p>Then I can create a car which can have struct car properties:</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="k">struct</span> <span class="n">car</span> <span class="n">herbie</span><span class="p">;</span>
+
+<span class="n">herbie</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="mi">1963</span><span class="p">;</span>      <span class="cm">/* here year and model are part of the &#39;struct car&#39; you can not save them as; */</span>
+<span class="n">herbie</span><span class="p">.</span><span class="n">model</span> <span class="o">=</span> <span class="sa"></span><span class="s">&#34;beetle&#34;</span><span class="p">;</span> <span class="cm">/* year = 1963 or model = &#34;beetle&#34; */</span></code></pre></div>
+<p>In Js, objects can have methods, besides properties.</p>
+
+<p><strong>Method</strong>: functions that are inherent to the object, mean nothing outside of it. Thus just like properties, methods can not ever stand on their own.</p>
+
+<ul>
+<li><code>function(object); -&gt; This is not object oriented programming!</code></li>
+<li><code>object.function(); -&gt; This is object oriented programming!. Object is the center of attention!</code></li>
+</ul>
+
+<p>The fields and methods of an object are similar in spirit to the idea of a dictionary, which is familiar if you come from python. So above struct in c can be written in javascript as follows: key value pairs.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// A js object is created with object literals {}
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">herbie</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">year</span><span class="o">:</span><span class="mi">1963</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span><span class="s1">&#39;beetle&#39;</span> <span class="p">}</span></code></pre></div>
+<p><strong>SideNote</strong>: Note that we didn&rsquo;t write the keys as strings. Property names (keys) are automatically coerced into a string.</p>
+
+<p>In JavaScript, objects are king. If you understand objects, you understand JavaScript.</p>
+
+<p>In JavaScript, almost &ldquo;everything&rdquo; is an object.</p>
+
+<ul>
+<li>Booleans can be objects (if defined with the new keyword)</li>
+<li>Numbers can be objects (if defined with the new keyword)</li>
+<li>Strings can be objects (if defined with the new keyword)</li>
+<li>Dates are always objects</li>
+<li>Maths are always objects</li>
+<li>Regular expressions are always objects</li>
+<li>Arrays are always objects</li>
+<li>Functions are always objects</li>
+<li>Objects are always objects</li>
+</ul>
+
+<p>All JavaScript values, except primitives, are objects. We will get back into objects later.</p>
+
+<p><strong>SideNote</strong>: <code>typeof(null)</code> returns <code>&quot;object&quot;</code>. This is a known bug for JS. Why not removed/fixed already? It will crash many websites. This is a weird feature of JS.</p>
+
+<h2 id="javascript-variables">Javascript Variables</h2>
+
+<p>The 5 concepts to understand variables in Javascript:</p>
+
+<ul>
+<li><strong>Decleration of Variables</strong>: Defining variables without assigning a value to them.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">x</span> <span class="c1">// Uncaught ReferenceError: x is not defined at &lt;anonymous&gt;:1:1
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="c1">// var is defined but not assigned. returns undefined
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">b</span>
+<span class="k">const</span> <span class="nx">c</span> <span class="err">// Uncaught SyntaxError: Missing initializer in const declaration</span></code></pre></div>
+<ul>
+<li><strong>Assignment of Variables</strong>: Assigning a value to variables.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">a</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="nx">b</span> <span class="o">=</span> <span class="s2">&#34;hello world&#34;</span></code></pre></div>
+<ul>
+<li><strong>Initialization of Variables</strong>: Declaring and Assigning variables at the same time.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1">// will not throw Uncaught ReferenceError.
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="s2">&#34;false&#34;</span>
+<span class="kd">let</span> <span class="nx">e</span> <span class="o">=</span> <span class="s2">&#34;how are you world?&#34;</span>
+<span class="k">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="mi">42</span> <span class="err">// will not throw Uncaught SyntaxError.</span></code></pre></div>
+<p><strong>SideNote</strong>: You can not declare / define or assign global (<code>x</code>) or const (<code>c</code>) variables, you can only initialize them. Compare x,c at Decleration and x,c at Initialization.</p>
+
+<ul>
+<li><strong>Hoisting</strong>: Interpreter taking the definitions of variables and function definitions and hoisting them to the top of the script. For example:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// returns undefined. Will not throw an error.
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">82</span><span class="p">;</span></code></pre></div>
+<p><strong>SideNote</strong>: Precedence of hoisting: function definitions goes to the top then come variables.</p>
+
+<ul>
+<li><strong>Scope of Variables</strong>:</li>
+</ul>
+
+<p>Until ECMAScript 6 Javascript had only two types of scope. Global and Function. Block scope come into play with ECMAScript 6.</p>
+
+<ul>
+<li>Global Scope: Variables declared outside a function have global scope. In global scope, context (value of <code>this</code>) is the global object (in a browser environment; Window object).</li>
+<li>Function Scope (also referred as Local Scope): Variables declared inside a function have function scope. In function scope, you need to study the context (value of this). There are several rules to determine it.</li>
+<li>Block Scope: Variables that only scoped between curly braces <code>{}</code>. We can write variables that are scoped between <code>{}</code> if we declare them with the <code>let</code> or <code>const</code> keyword. This means that a new, local scope is created from any kind of block, including function blocks, if statements, and for and while loops.</li>
+</ul>
+
+<p>We also need to understand Lexical Scope concept:</p>
+
+<p><strong>Lexical Scope (Sometimes Referred as Static Scope)</strong></p>
+
+<p>Lexical scope means that in a nested group of functions, the inner functions have access to the variables and other resources of their parent scope. This means that the child functions are lexically bound to the execution context of their parents. Lexical scope is sometimes also referred to as static scope. For Eample:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">grandfather</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Hammad&#39;</span><span class="p">;</span>
+    <span class="c1">// &#39;likes&#39; is not accessible here
+</span><span class="c1"></span>    <span class="kd">function</span> <span class="nx">parent</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// &#39;name&#39; is accessible here
+</span><span class="c1"></span>        <span class="c1">// &#39;likes&#39; is not accessible here
+</span><span class="c1"></span>        <span class="kd">function</span> <span class="nx">child</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// Innermost level of the scope chain
+</span><span class="c1"></span>            <span class="c1">// &#39;name&#39; is also accessible here
+</span><span class="c1"></span>            <span class="kd">var</span> <span class="nx">likes</span> <span class="o">=</span> <span class="s1">&#39;Coding&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>The thing you will notice about lexical scope is that it works forward, meaning name can be accessed by its children&rsquo;s execution contexts. But it doesn&rsquo;t work backward to its parents, meaning that the variable <code>likes</code> cannot be accessed by its parents.</p>
+
+<p>This also tells us that variables having the same name in different <strong>execution contexts</strong> gain precedence from top to bottom of the <strong>execution stack</strong>. A variable, having a name similar to another variable, in the innermost function (topmost context of the execution stack) will have higher precedence.</p>
+
+<p>I know above paragraph is a bit too much to grasp but bear with me. Key things to keep in mind for later here:</p>
+
+<ul>
+<li>Scope refers to the visibility of variables.</li>
+<li>Context refers to the value of <code>this</code> in the same scope. Context is used to refer to the value of <code>this</code> in some particular part of your code.</li>
+</ul>
+
+<p>When especially debugging your code you will often ask yourself these two questions:</p>
+
+<ul>
+<li>Is my variable really visible? -&gt; What is the scope of it? -&gt; Where does it sit lexically in my code?</li>
+<li>When has my variable been declared? -&gt; What is the execution context of it? -&gt; Where does it sit lexically in my code?</li>
+</ul>
+
+<p>We can also change the context using function methods which are <code>bind()</code>, <code>call()</code>, <code>apply()</code>. We will look into this topic later.</p>
+
+<p>Now I can give more information about JS variables especially for the scope of them, reassigning and redeclaring them :</p>
+
+<p><strong>Initialization, Reassignment and Redeclaration of Variables within the same scope:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// Initialization
+</span><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="mi">44</span><span class="p">;</span> <span class="c1">// creates a global variable, hoisted? 
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">44</span><span class="p">;</span> <span class="c1">// might have global or function scope, hoisted
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">44</span><span class="p">;</span> <span class="c1">// might have global/function/block scope, not hoisted
+</span><span class="c1"></span><span class="k">const</span> <span class="nx">q</span> <span class="o">=</span> <span class="mi">44</span><span class="p">;</span> <span class="c1">// might have global/function/block scope, not hoisted.
+</span><span class="c1"></span>
+<span class="c1">// Reassignment 
+</span><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="mi">45</span><span class="p">;</span> <span class="c1">// This operation is actually re-decleration and it is possible.
+</span><span class="c1"></span><span class="nx">y</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">// vars can be reassigned
+</span><span class="c1"></span><span class="nx">z</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">// lets can be reassigned
+</span><span class="c1"></span><span class="nx">q</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1">// consts can not be reassigned (Uncaught TypeError: Assignment to constant variable)
+</span><span class="c1"></span>
+<span class="c1">// Redecleration 
+</span><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="mi">46</span> <span class="c1">// global variables can be redeclared.
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">46</span> <span class="c1">// vars can be redeclared
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">46</span> <span class="c1">// lets can not be redeclared (SyntaxError: redeclaration of let z)
+</span><span class="c1"></span><span class="k">const</span> <span class="nx">q</span> <span class="o">=</span> <span class="mi">46</span> <span class="err">// consts can not be redeclared (SyntaxError: redeclaration of const q)</span></code></pre></div>
+<p><strong>Initialization, Reassignment and Redeclaration of Variables within the different scopes:</strong></p>
+
+<p>You can reinitialize, reassign and redeclare your variables in different scopes. But remember;</p>
+
+<ul>
+<li>global variables (variables declared with <code>var</code>, and variables initialized without a keyword (<code>x=42</code>)) can not have block scope!.</li>
+<li>The difference between let and const lies on reassigment. Consts can not be reassigned.</li>
+</ul>
+
+<p><strong>SideNote</strong>: Consts can not be reassigned but can be mutated. Consts are just created with a constant reference in memory. Hence if you do not attempt to change the memory location you are fine. Mutation is fine.
+Assignment and mutation difference topic will come <a href="https://dev.to/boywithsilverwings/reassignment-vs-mutability-21ob">later</a>.</p>
+
+<h2 id="javascript-comparison-operators-logical-operators-conditionals-if-else-if-else-switch-ternary">Javascript Comparison Operators, Logical Operators, Conditionals (if, else if, else, switch, ternary)</h2>
+
+<p>to be continue next week&hellip;</p>
+
+</div>
+  <aside>
+      <div class="bug_reporting">
+          <h4>Find an error or bug?</h4>
+          <p>Everything on this site is available on GitHub. Head to <a href='https://github.com/osmancakir/osmancakirioblog/issues/new'>and submit a suggested change</a>. You can also message me directly on <a href='https://twitter.com/osmancakirio'>Twitter</a>.</p>
+      </div>
+      </aside>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span class="text-muted">This project contains 28 pages and is available on <a href="https://github.com/osmancakir/osmancakirioblog">GitHub</a>. Copyright &copy; Osman Cakir, <time datetime="2018">2018</time>.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -17,20 +17,16 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="What is Digital Humanities?" />
-<meta property="og:description" content="An Article for thinking Humanities in Digital" />
+<meta property="og:title" content="PostgreSQL Basics with Art" />
+<meta property="og:description" content="PostgreSQL Basics." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://osmancakir.io/digitalhumanities/whatisdh/" />
+<meta property="og:url" content="https://osmancakir.io/notebooks/technical-notes/postgresql_basics_with_art/" />
 
 
 
-<meta property="article:published_time" content="2020-09-03T11:53:49-07:00"/>
+<meta property="article:published_time" content="2019-03-09T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2020-09-03T11:53:49-07:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2019-03-09T00:00:00&#43;00:00"/>
 
 
 
@@ -38,8 +34,12 @@
 
 
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="What is Digital Humanities?"/>
-<meta name="twitter:description" content="An Article for thinking Humanities in Digital"/>
+
+
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="PostgreSQL Basics with Art"/>
+<meta name="twitter:description" content="PostgreSQL Basics."/>
 <meta name="generator" content="Hugo 0.30" /> 
     
     
@@ -47,20 +47,20 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "What is Digital Humanities?",
-  "url": "https://osmancakir.io/digitalhumanities/whatisdh/",
-  "wordCount": "4",
-  "datePublished": "2020-09-03T11:53:49-07:00",
-  "dateModified": "2020-09-03T11:53:49-07:00",
+  "headline": "PostgreSQL Basics with Art",
+  "url": "https://osmancakir.io/notebooks/technical-notes/postgresql_basics_with_art/",
+  "wordCount": "203",
+  "datePublished": "2019-03-09T00:00:00&#43;00:00",
+  "dateModified": "2019-03-09T00:00:00&#43;00:00",
   "author": {
     "@type": "Person",
     "name": "Osman Cakir"
   },
-  "description": "An Article for thinking Humanities in Digital"
+  "description": "PostgreSQL Basics."
 }
 </script> 
 
-    <title>What is Digital Humanities?</title>
+    <title>PostgreSQL Basics with Art</title>
 
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -157,13 +157,53 @@ MathJax.Hub.Config({
       <div class="alert alert-warning flashcard_ad" role="alert">
           Would you like to support my research and work? <a href="https://www.paypal.me/osmancakirio" class="alert-link">My paypal link is here!.</a> Thank you, I will remember you!
       </div>
-    <h1 class="technical_note_title">What is Digital Humanities?</h1>
+    <h1 class="technical_note_title">PostgreSQL Basics with Art</h1>
     <div class="technical_note_date">
-      <time datetime=" 2020-09-03T11:53:49-07:00 "> 03 Sep 2020</time>
+      <time datetime=" 2019-03-09T00:00:00Z "> 09 Mar 2019</time>
     </div>
   </header>
   <div class="content">
-  <p>What is Digital Humanities?</p>
+  
+
+<h2 id="create-table">Create Table</h2>
+
+<p>Let&rsquo;s create a table called painters and save the data about the most expensive paintings in the world. Money value of an art piece is probably the most unreasonable one yet it is one of the first analysis that is demanded when a quantitative analysis on art is the aim. Money is cheap when compared to the true value of an Art. Only quality as Robert M. Pirsig defined could be the trade value for art.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">-- Create table called painters
+</span><span class="c1"></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">painters</span> <span class="p">(</span>
+    <span class="c1">-- string variable
+</span><span class="c1"></span>    <span class="n">painter</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
+    <span class="c1">-- string variable
+</span><span class="c1"></span>    <span class="n">painting</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
+    <span class="c1">-- integer variable
+</span><span class="c1"></span>    <span class="n">sold</span> <span class="p">(</span><span class="n">million</span> <span class="n">Euros</span><span class="p">)</span> <span class="nb">int</span>
+<span class="p">)</span></code></pre></div>
+
+<h2 id="insert-rows">Insert Rows</h2>
+
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">-- Insert into the table painters
+</span><span class="c1"></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">adventurers</span> <span class="p">(</span><span class="n">painter</span><span class="p">,</span> <span class="n">painting</span><span class="p">,</span> <span class="n">sold</span> <span class="p">(</span><span class="n">million</span> <span class="n">Euros</span><span class="p">))</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;Leonardo da Vinci&#39;</span><span class="p">,</span> <span class="s1">&#39;Salvator Mundi&#39;</span><span class="p">,</span> <span class="mi">382</span><span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;Willem de Kooning&#39;</span><span class="p">,</span> <span class="s1">&#39;Interchange&#39;</span><span class="p">,</span> <span class="mi">254</span><span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;Paul Cézanne&#39;</span><span class="p">,</span> <span class="s1">&#39;The Card Players&#39;</span><span class="p">,</span> <span class="mi">212</span> <span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;Paul Gauguin&#39;</span><span class="p">,</span> <span class="s1">&#39;Nafea Faa Ipoipo&#39;</span><span class="p">,</span> <span class="mi">172</span><span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;Jackson Pollock&#39;</span><span class="p">,</span> <span class="s1">&#39;Number 7A&#39;</span><span class="p">,</span> <span class="mi">169</span><span class="p">.</span><span class="mi">8</span><span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;Mark Rothko&#39;</span><span class="p">,</span> <span class="s1">&#39;No. 6 (Violet, Green and Red)&#39;</span><span class="p">,</span> <span class="mi">157</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span></code></pre></div>
+
+<h2 id="retrieve-rows">Retrieve Rows</h2>
+
+<p><div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">-- Retrieve all rows from table
+</span><span class="c1"></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">adventurers</span></code></pre></div>
+<table border="1" style="border-collapse:collapse">
+<tr><th>painter</th><th>painting</th><th>sold (million Euros)</th></tr>
+<tr><td>Leonardo da Vinci</td><td>Salvator Mundi</td><td>382</td></tr>
+<tr><td>Willem de Kooning</td><td>Interchange</td><td>254</td></tr>
+<tr><td>Paul Cézanne</td><td>The Card Players</td><td>212</td></tr>
+<tr><td>Paul Gauguin</td><td>Nafea Faa Ipoipo</td><td>172</td></tr>
+<tr><td>Jackson Pollock</td><td>Number 7A</td><td>169.8</td>&lt;</tr>
+<tr><td>Mark Rothko</td><td>No. 6 (Violet, Green and Red)</td><td>157.9</td></tr></table></p>
+
+<p>to be continued&hellip;</p>
 
 </div>
   <aside>
