@@ -17,20 +17,16 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="PostgreSQL Basics with Art" />
-<meta property="og:description" content="PostgreSQL Basics." />
+<meta property="og:title" content="Haftanin Notlari - 9" />
+<meta property="og:description" content="bu hafta üzerine biraz düsündügüm, okudugum seyler" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://osmancakir.io/notebooks/technical-notes/postgresql_basics_with_art/" />
+<meta property="og:url" content="https://osmancakir.io/articles/weekly-notes/haftanin-notlari-9/" />
 
 
 
-<meta property="article:published_time" content="2019-03-09T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2020-11-13T01:53:49-07:00"/>
 
-<meta property="article:modified_time" content="2019-03-09T00:00:00&#43;00:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2020-11-13T01:53:49-07:00"/>
 
 
 
@@ -38,8 +34,12 @@
 
 
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="PostgreSQL Basics with Art"/>
-<meta name="twitter:description" content="PostgreSQL Basics."/>
+
+
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Haftanin Notlari - 9"/>
+<meta name="twitter:description" content="bu hafta üzerine biraz düsündügüm, okudugum seyler"/>
 <meta name="generator" content="Hugo 0.30" /> 
     
     
@@ -47,20 +47,20 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "PostgreSQL Basics with Art",
-  "url": "https://osmancakir.io/notebooks/technical-notes/postgresql_basics_with_art/",
-  "wordCount": "203",
-  "datePublished": "2019-03-09T00:00:00&#43;00:00",
-  "dateModified": "2019-03-09T00:00:00&#43;00:00",
+  "headline": "Haftanin Notlari - 9",
+  "url": "https://osmancakir.io/articles/weekly-notes/haftanin-notlari-9/",
+  "wordCount": "292",
+  "datePublished": "2020-11-13T01:53:49-07:00",
+  "dateModified": "2020-11-13T01:53:49-07:00",
   "author": {
     "@type": "Person",
     "name": "Osman Cakir"
   },
-  "description": "PostgreSQL Basics."
+  "description": "bu hafta üzerine biraz düsündügüm, okudugum seyler"
 }
 </script> 
 
-    <title>PostgreSQL Basics with Art</title>
+    <title>Haftanin Notlari - 9</title>
 
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -157,53 +157,29 @@ MathJax.Hub.Config({
       <div class="alert alert-warning flashcard_ad" role="alert">
           Would you like to support my research and work? <a href="https://www.paypal.me/osmancakirio" class="alert-link">My paypal link is here!.</a> Thank you, I will remember you!
       </div>
-    <h1 class="technical_note_title">PostgreSQL Basics with Art</h1>
+    <h1 class="technical_note_title">Haftanin Notlari - 9</h1>
     <div class="technical_note_date">
-      <time datetime=" 2019-03-09T00:00:00Z "> 09 Mar 2019</time>
+      <time datetime=" 2020-11-13T01:53:49-07:00 "> 13 Nov 2020</time>
     </div>
   </header>
   <div class="content">
-  
+  <ul>
+<li><p>Bu hafta blogumu okuyup biri bana ulasti :) Cok sevindim. Hem de Almanya&rsquo;dan.</p></li>
 
-<h2 id="create-table">Create Table</h2>
+<li><p>Hayatimda ilk defa agackakan gördüm. Göbüsü kirmizili hem de. Tak tak vuruyo agaca kafayi hakkaten. Bakarken basim agridi.</p></li>
 
-<p>Let&rsquo;s create a table called painters and save the data about the most expensive paintings in the world. Money value of an art piece is probably the most unreasonable one yet it is one of the first analysis that is demanded when a quantitative analysis on art is the aim. Money is cheap when compared to the true value of an Art. Only quality as Robert M. Pirsig defined could be the trade value for art.</p>
+<li><p>Wikipedia&rsquo;yi cok seviyorum ben ya. Ve bu hafta ilk defa bagista bulundum. Herkes de bagista bulunsun.</p></li>
 
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">-- Create table called painters
-</span><span class="c1"></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">painters</span> <span class="p">(</span>
-    <span class="c1">-- string variable
-</span><span class="c1"></span>    <span class="n">painter</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
-    <span class="c1">-- string variable
-</span><span class="c1"></span>    <span class="n">painting</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
-    <span class="c1">-- integer variable
-</span><span class="c1"></span>    <span class="n">sold</span> <span class="p">(</span><span class="n">million</span> <span class="n">Euros</span><span class="p">)</span> <span class="nb">int</span>
-<span class="p">)</span></code></pre></div>
+<li><p>Sitede bulunan python notlarini düzenledim. Jupyter Notebook&rsquo;lari markdown&rsquo;a ceviren scriptim vardi bi tane ama tabii cok ideal calismiyordu. Elle düzenledim artik napalim ama su an okunur durumdalar.</p></li>
 
-<h2 id="insert-rows">Insert Rows</h2>
+<li><p>Javascript ögrenmek icin kendime yazdigim bir javascript kitabim var. Cesitli kaynaklardan toparladigim kod örnekleri, stackoverflow soru cevaplari, bilumum bilgiler. Daginik baya ama ben bi seyi aradigimda yolumu buluyorum. Bu hafta onu biraz düzenleyerek sayfaya eklemeye basladim. Cok yeni baslayan icin degil ama bence tamamini aktardigimda epey bi konuya aciklik getiren bir kaynak olacak. Kendi ögrenme deneyimimi de aralara not olarak eklemeye calisiyorum. Kafasi benim gibi calisan birisine denk gelirse epey faydasini görür diye düsünüyorum.</p></li>
 
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">-- Insert into the table painters
-</span><span class="c1"></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">adventurers</span> <span class="p">(</span><span class="n">painter</span><span class="p">,</span> <span class="n">painting</span><span class="p">,</span> <span class="n">sold</span> <span class="p">(</span><span class="n">million</span> <span class="n">Euros</span><span class="p">))</span>
-<span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;Leonardo da Vinci&#39;</span><span class="p">,</span> <span class="s1">&#39;Salvator Mundi&#39;</span><span class="p">,</span> <span class="mi">382</span><span class="p">),</span>
-       <span class="p">(</span><span class="s1">&#39;Willem de Kooning&#39;</span><span class="p">,</span> <span class="s1">&#39;Interchange&#39;</span><span class="p">,</span> <span class="mi">254</span><span class="p">),</span>
-       <span class="p">(</span><span class="s1">&#39;Paul Cézanne&#39;</span><span class="p">,</span> <span class="s1">&#39;The Card Players&#39;</span><span class="p">,</span> <span class="mi">212</span> <span class="p">),</span>
-       <span class="p">(</span><span class="s1">&#39;Paul Gauguin&#39;</span><span class="p">,</span> <span class="s1">&#39;Nafea Faa Ipoipo&#39;</span><span class="p">,</span> <span class="mi">172</span><span class="p">),</span>
-       <span class="p">(</span><span class="s1">&#39;Jackson Pollock&#39;</span><span class="p">,</span> <span class="s1">&#39;Number 7A&#39;</span><span class="p">,</span> <span class="mi">169</span><span class="p">.</span><span class="mi">8</span><span class="p">),</span>
-       <span class="p">(</span><span class="s1">&#39;Mark Rothko&#39;</span><span class="p">,</span> <span class="s1">&#39;No. 6 (Violet, Green and Red)&#39;</span><span class="p">,</span> <span class="mi">157</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span></code></pre></div>
+<li><p>Cocukken okumayi cok sevdigim bir kitap serisi vardi. Ann Donegan Johnson&rsquo;un Inkilap yayinevinden cikan degerler serisi. Ögrenmenin Önemi, Sevginin Önemi, Hayal Kurmanin Önemi diye basliklari var. Cogunlukla bilim adamlarinin hayatlarindan yola cikarak konusu olan degeri güzel bir dille anlatiyor. Ben cocuklugumda 8 ya da 9 tanesini okumustum galiba. Bir kismi kuzenimde kaldi ama hala elimde 5 tanesi var. Meger bu seri 20 kitapmis. Keske hepsi olsaymis elimde cocukken de okuyabilseymisim. Insanlari, dogayi, bilimi sevmeyi bu kitaplardan ögrendigimi farkediyorum simdi cünkü. Ben de Türkiye&rsquo;deki yegenlerime aldim hem de bütün seriyi. Umarim onlar da okur, severler.</p></li>
 
-<h2 id="retrieve-rows">Retrieve Rows</h2>
+<li><p>Berkun Oya Netflix&rsquo;e yeni dizi yapmis. Bir Baskadir. Ve yine harika bir is cikarmis. Bizim kekolar tarafindan dinimize hakaret ediyor diye hemen saldiriya da ugramis. Korkarim kaldirirlar da. Kaldirilmadan bir an önce izleyin derim.</p></li>
 
-<p><div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">-- Retrieve all rows from table
-</span><span class="c1"></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">adventurers</span></code></pre></div>
-<table border="1" style="border-collapse:collapse">
-<tr><th>painter</th><th>painting</th><th>sold (million Euros)</th></tr>
-<tr><td>Leonardo da Vinci</td><td>Salvator Mundi</td><td>382</td></tr>
-<tr><td>Willem de Kooning</td><td>Interchange</td><td>254</td></tr>
-<tr><td>Paul Cézanne</td><td>The Card Players</td><td>212</td></tr>
-<tr><td>Paul Gauguin</td><td>Nafea Faa Ipoipo</td><td>172</td></tr>
-<tr><td>Jackson Pollock</td><td>Number 7A</td><td>169.8</td>&lt;</tr>
-<tr><td>Mark Rothko</td><td>No. 6 (Violet, Green and Red)</td><td>157.9</td></tr></table></p>
-
-<p>to be continued&hellip;</p>
+<li><p>Bir de bu hafta Türkiye Icin Mega Projelerimi listeledigim bir yazi yazdim. Öyle kendimce ülke kurtariyorum.</p></li>
+</ul>
 
 </div>
   <aside>

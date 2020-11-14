@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://osmancakir.io/articles/weekly-notes/haftanin-notlari-9/</loc>
+    <lastmod>2020-11-13T01:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://osmancakir.io/articles/life-notes/turkiye-icin-mega-projeler/</loc>
+    <lastmod>2020-11-13T01:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://osmancakir.io/python/python_1_introduction/</loc>
     <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
@@ -143,7 +153,7 @@
   
   <url>
     <loc>https://osmancakir.io/</loc>
-    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-13T01:53:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,32 @@
     <description>Recent content on osman cakir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2020 01:53:49 -0700</lastBuildDate>
     
 	<atom:link href="https://osmancakir.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Haftanin Notlari - 9</title>
+      <link>https://osmancakir.io/articles/weekly-notes/haftanin-notlari-9/</link>
+      <pubDate>Fri, 13 Nov 2020 01:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/articles/weekly-notes/haftanin-notlari-9/</guid>
+      <description>Bu hafta blogumu okuyup biri bana ulasti :) Cok sevindim. Hem de Almanya&amp;rsquo;dan.
+ Hayatimda ilk defa agackakan gördüm. Göbüsü kirmizili hem de. Tak tak vuruyo agaca kafayi hakkaten. Bakarken basim agridi.
+ Wikipedia&amp;rsquo;yi cok seviyorum ben ya. Ve bu hafta ilk defa bagista bulundum. Herkes de bagista bulunsun.
+ Sitede bulunan python notlarini düzenledim. Jupyter Notebook&amp;rsquo;lari markdown&amp;rsquo;a ceviren scriptim vardi bi tane ama tabii cok ideal calismiyordu. Elle düzenledim artik napalim ama su an okunur durumdalar.</description>
+    </item>
+    
+    <item>
+      <title>Turkiye Icin Mega Projeler</title>
+      <link>https://osmancakir.io/articles/life-notes/turkiye-icin-mega-projeler/</link>
+      <pubDate>Fri, 13 Nov 2020 01:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/articles/life-notes/turkiye-icin-mega-projeler/</guid>
+      <description>Cilgin projeler, mega projeler, ouuv ucacaz, uzaya cikacagiz diye konusulan projeler hep neden beton ile asfalt ile alakali? Yapabilecegimiz daha baska seyler olamaz mi? Sanirim herkesin ara ara kafasinda ülke kurtardigi fikirleri oluyor. Hasbelkader benim de oluyor :).
+ Elimizde tamamiyle bagimsiz kalmayi basarabilmis, bir konuda bilgi almak amaciyla bir seyler arayan her insanin mutlaka baktigi bir platform var. Ara ara sacma sapan bir sekilde Türkiye&amp;rsquo;de engellenen bir platform bu üstelik.</description>
+    </item>
     
     <item>
       <title>Python 1 : Introduction</title>
