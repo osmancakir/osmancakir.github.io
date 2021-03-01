@@ -156,6 +156,15 @@ Index Haftanin Notlari - 1 - 18.09.2021 Haftanin Notlari - 2 - 25.09.2020 Haftan
     </item>
     
     <item>
+      <title>Javascript to React Exercises</title>
+      <link>https://osmancakir.io/javascriptnotes/javascripttoreactexercises/</link>
+      <pubDate>Thu, 03 Sep 2020 11:53:49 -0700</pubDate>
+      
+      <guid>https://osmancakir.io/javascriptnotes/javascripttoreactexercises/</guid>
+      <description>1 - Create an Html Document with a div. div should have an id of root. 2 - Add a new element to that html document with javascript. Element can be a div it should have a class container and showing to the screen &amp;ldquo;hello world!&amp;rdquo; 3 - Create also that div with id of root with javascript. https://developer.mozilla.org/en-US/docs/Web/HTML/Element</description>
+    </item>
+    
+    <item>
       <title>React to this</title>
       <link>https://osmancakir.io/reactnotes/firstreactnote/</link>
       <pubDate>Thu, 03 Sep 2020 11:53:49 -0700</pubDate>
